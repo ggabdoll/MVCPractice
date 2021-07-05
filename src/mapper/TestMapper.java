@@ -32,4 +32,11 @@ interface TestMapper {
             """)
     int insertLikes(@Param("test") Test likes)
 
+    @Update("""
+            UPDATE post , likes
+            set hits_count = hits_count + flag
+            WHERE post.id = likes.post_id;
+            """)
+    int updateHitsCount(@Param("test") Test hitcn)
+
 }

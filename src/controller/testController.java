@@ -38,4 +38,7 @@ public class testController {
     public void insertLikes(@RequestBody Test likes){
         testService.insertLikes(likes);
     }
+
+    @PostMapping("hitscn")
+    public void updateHitsCount(@RequestBody Test hitcn) {testService.updateHitsCount(hitcn);}
 }

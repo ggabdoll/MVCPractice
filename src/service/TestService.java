@@ -20,4 +20,6 @@ public class TestService {
     public void insertLikes(Test likes) {
         mapper.insertLikes(likes);
     }
+
+    public void updateHitsCount(Test hitcn) { mapper.updateHitsCount(hitcn); }
 }
